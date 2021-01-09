@@ -50,8 +50,8 @@
 >1.Py启动:  
 >安装依赖requests,lxml第三方库,依次执行,已有可跳过.  
 >`pip3 install requests`  
->`pip3 install lxml`
->安装完毕后,执行:
+>`pip3 install lxml`  
+>安装完毕后,执行命令启动:  
 >`python3 jiaowu.py`
 >
 >2.可执行文件启动:
