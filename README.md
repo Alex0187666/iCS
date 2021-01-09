@@ -47,11 +47,11 @@
 ####须知:
 
 * 运行程序，按提示输入学号及教务处密码
->![程序初始界面](https://i.loli.net/2021/01/10/jBZ4tFa57x6OPNh.png)
->![登陆失败界面](https://i.loli.net/2021/01/10/kQSD8pisTEzZFP9.png)
+![程序初始界面](https://i.loli.net/2021/01/10/jBZ4tFa57x6OPNh.png "程序初始界面")
+![登陆失败界面](https://i.loli.net/2021/01/10/kQSD8pisTEzZFP9.png "登陆失败界面")
 > ⚠️注意输入密码时,终端并不会回显,凭直觉输入密码即可  
 * 根据提示输入对应指令序号即可  
->![jiaowu2.png](https://i.loli.net/2021/01/10/JRWnf1DGuwQ2iIH.png)  
+![登陆成功界面](https://i.loli.net/2021/01/10/JRWnf1DGuwQ2iIH.png "登陆成功界面")  
 * 以下对各操作进行详细说明:   
 >1.查看预选课程:  
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在终端输入数字1,
