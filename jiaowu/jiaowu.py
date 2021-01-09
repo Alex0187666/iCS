@@ -116,22 +116,22 @@ class Sicau():
 
 if __name__ == '__main__':
     Info = ''' 
-                iii              CCCS           SCCCS                           
-                iii          Siiiiiiiiii     Ciiiiiiiiii                        
-                SSS         SiiiC    Cii    SiiiS    Cii                        
-                           Siii             iii                                 
-           Siiiiiii        iii              iii                                 
-            iiiiiii        iii              iiiC                                
-                iii        iiC               iiiiiiCS                           
-                iii        iiC                 iiiiiiiiC                        
-                iii        iiC                     iiiiiS                       
-                iii        iii                        iii                       
-                iii        iiiS                       CiiS                      
-                iii        Siii                       iii                       
-                iii         SiiiC    Cii    iii     SiiiC                       
-           iiiiiiiiiiiii      iiiiiiiiii    iiiiiiiiiiiC                        
-                                 CiiC          SCiiCS   
-
+                iii              CCCS           SSSSS                           
+                iii          CCCCCCCCCCC     SSSSSSSSSSS                        
+                iii         CCCCC    CCC    SSSSS    SSS                        
+                           CCCC             SSS                                 
+           iiiiiiii        CCC              SSS                                 
+            iiiiiii        CCC              SSSS                                
+                iii        CCC               SSSSSSSS                           
+                iii        CCC                 SSSSSSSSS                        
+                iii        CCC                     SSSSSS                       
+                iii        CCC                        SSS                       
+                iii        CCCC                       SSSS                      
+                iii        CCCC                       SSS                       
+                iii         CCCCC    CCC    SSS     SSSSS                       
+           iiiiiiiiiiiii      CCCCCCCCCC    SSSSSSSSSSSS                        
+                                 CCCC          SSSSSS      
+                                       
                             预祝您考试顺利！   
             (本工具仅作为辅助作用，后果自担，使用前请详细查看教程）                    
 '''

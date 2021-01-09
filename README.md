@@ -2,21 +2,21 @@
 该仓库将放于有关Sicau学校可用的脚本🙋🏻‍♂️  
 有时间或手痒了就会持续更新下去🥳
 ```
-                        iii              CCCS           SCCCS                           
-                        iii          Siiiiiiiiii     Ciiiiiiiiii                        
-                        SSS         SiiiC    Cii    SiiiS    Cii                        
-                                   Siii             iii                                 
-                   Siiiiiii        iii              iii                                 
-                    iiiiiii        iii              iiiC                                
-                        iii        iiC               iiiiiiCS                           
-                        iii        iiC                 iiiiiiiiC                        
-                        iii        iiC                     iiiiiS                       
-                        iii        iii                        iii                       
-                        iii        iiiS                       CiiS                      
-                        iii        Siii                       iii                       
-                        iii         SiiiC    Cii    iii     SiiiC                       
-                   iiiiiiiiiiiii      iiiiiiiiii    iiiiiiiiiiiC                        
-                                         CiiC          SCiiCS                           
+                        iii              CCCS           SSSSS                           
+                        iii          CCCCCCCCCCC     SSSSSSSSSSS                        
+                        iii         CCCCC    CCC    SSSSS    SSS                        
+                                   CCCC             SSS                                 
+                   iiiiiiii        CCC              SSS                                 
+                    iiiiiii        CCC              SSSS                                
+                        iii        CCC               SSSSSSSS                           
+                        iii        CCC                 SSSSSSSSS                        
+                        iii        CCC                     SSSSSS                       
+                        iii        CCC                        SSS                       
+                        iii        CCCC                       SSSS                      
+                        iii        CCCC                       SSS                       
+                        iii         CCCCC    CCC    SSS     SSSSS                       
+                   iiiiiiiiiiiii      CCCCCCCCCC    SSSSSSSSSSSS                        
+                                         CCCC          SSSSSS                           
                                                                                By White
                                                                               2020.01.10
 ```
