@@ -164,7 +164,7 @@ if __name__ == '__main__':
                 print("\r输入指令有误...", end='\r')
         if num == 0:
             Judge = False
-            print("\r感谢使用，程序已退出:)", end='\r')
+            print("感谢使用，程序已退出:)")
         elif num == 1:
             iCS.GetPreClasses()
         elif num == 2:
