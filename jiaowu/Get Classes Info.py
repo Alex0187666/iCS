@@ -4,7 +4,7 @@ from lxml import etree
 from selenium import webdriver
 
 
-def Login(username='201900550',password='275358'):
+def Login(username='你的学号',password='密码'):
     driver = webdriver.Chrome()
     driver.get('http://jiaowu.sicau.edu.cn/web/web/web/index.asp')
     driver.find_element_by_id('txtUser').send_keys(username)
