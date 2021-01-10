@@ -47,21 +47,19 @@
 ### 使用文档  
 #### 须知:  
 * 首次运行程序，按提示输入学号及教务处密码
->运行方法:  
->1.Py启动:  
->安装依赖requests,lxml第三方库,依次执行,已有可跳过.  
->`pip3 install requests`  
->`pip3 install lxml`  
->安装完毕后,执行命令启动:  
->`python3 jiaowu.py`
->
->2.可执行文件启动:
->`可执行文件在jiaowu文件夹里,双击执行即可`  
-![程序初始界面](https://i.loli.net/2021/01/10/jBZ4tFa57x6OPNh.png "程序初始界面")
-> ⚠️注意输入密码时,终端并不会回显,凭直觉输入密码即可    
+- 运行方法:  
+    1.Py启动:  
+    安装依赖requests,lxml第三方库,依次执行,已有可跳过.  
+    `pip3 install requests`  
+    `pip3 install lxml`  
+    安装完毕后,执行命令启动:  
+    `python3 jiaowu.py`
+    
+    2.可执行文件启动:  
+    `可执行文件在jiaowu文件夹里,双击执行即可`  
+    ⚠️注意输入密码时,终端并不会回显,凭直觉输入密码即可    
    
-* 登陆成功后,程序会将配置信息写入config.txt,根据提示输入对应指令序号即可 
-![登陆成功界面](https://i.loli.net/2021/01/10/JRWnf1DGuwQ2iIH.png "登陆成功界面")  
+* 登陆成功后,程序会将配置信息写入config.txt,根据提示输入对应指令序号即可  
   
 * 以下内容对各操作进行详细说明:   
 ```
