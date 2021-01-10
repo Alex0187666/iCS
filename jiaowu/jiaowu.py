@@ -1,7 +1,19 @@
+'''
+Function:
+    Sicau教务抢课
+Author:
+    XWhite
+GitHub项目地址:
+    https://github.com/Upsetin/iCS
+更新日期:
+    2021-01-10
+'''
+
+
+
 import requests, re, getpass, csv
 
 from lxml import etree
-from urllib import parse
 
 
 
@@ -140,6 +152,7 @@ class Sicau():
 
     '''获取预选课程'''
     def GetPreClasses(self):
+        print('该功能暂未开放!')
         return None
         url = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan/kaike_yuxuan.asp?title_id1=1'
         a = self.Requests.get(url)
@@ -191,6 +204,7 @@ class Sicau():
 
     '''抢预选课'''
     def ConfirePre(self):
+        print('该功能暂未开放!')
         pass
 
     '''获取本地的课程信息'''
@@ -265,13 +279,13 @@ if __name__ == '__main__':
         if num == 0:
             Judge = False
             print("感谢使用，程序已退出:)")
-        elif num == 3:
-            iCS.GetPreClasses()
-        elif num == 2:
-            iCS.ConfirePre()
         elif num == 1:
             ClassID = input("请输入课程ID:")
             iCS.ConfireClass(ClassID)
+        elif num == 2:
+            iCS.ConfirePre()
+        elif num == 3:
+            iCS.GetPreClasses()
         elif num == 4:
             ClassID = input("请输入课程ID:")
             iCS.FindUpBiaohao([ClassID])

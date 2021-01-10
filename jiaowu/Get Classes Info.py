@@ -1,4 +1,15 @@
-import requests,re,csv,time
+'''
+Function:
+    Sicau教务抢课
+Author:
+    XWhite
+GitHub项目地址:
+    https://github.com/Upsetin/iCS
+更新日期:
+    2021-01-10
+'''
+
+import requests,re,csv
 from lxml import etree
 
 from selenium import webdriver
