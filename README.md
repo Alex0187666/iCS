@@ -96,5 +96,3 @@
 
 ## 联系方式
 [邮箱: xiaobaiyeaidaima@gmail.com](mailto:xiaobaiyeaidaima@gmail.com)  
-[QQ: 2063546307](http://wpa.qq.com/msgrd?v=3&uin=2063546307&site=qq&menu=yes)  
-[Vx: Sweetie_Falcon]()
