@@ -11,7 +11,7 @@ GitHub项目地址:
 
 
 
-import requests, re, getpass, csv
+import requests, re, getpass, csv, os
 
 from lxml import etree
 
@@ -47,6 +47,9 @@ class Sicau():
             self.Login(username=username,password=password)
         f = csv.reader(open('教务处开课信息(含课程ID）.csv', encoding='utf-8'))
         data = list(f)
+        self.url = os.path.dirname(os.path.abspath(__file__))
+        os.chdir(self.url)
+        # print(self.url)
         self.info = data
         self.bh_id,self.name_id = {},{}
         for i in data[1:]:
