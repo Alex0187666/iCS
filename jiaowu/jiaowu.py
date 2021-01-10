@@ -76,7 +76,6 @@ class Sicau():
                 self.IntoConfig(self.ck.replace('2020%2D2021%2D1','2020%2D2021%2D2'))
             print('\r已写入配置文件config.txt中       ',end='\r')
             isLogin = True
-            print(self.Requests.cookies.items())
             # '''学期检测'''
             # self.semesterTest()
 
@@ -141,12 +140,13 @@ class Sicau():
 
     '''获取预选课程'''
     def GetPreClasses(self):
-        url = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan/xuan_2018.asp?bianhao=' + str(
-            899679718199025481334403813310638134631381992934860344979721228986024077)
+        return None
+        url = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan/kaike_yuxuan.asp?title_id1=1'
         a = self.Requests.get(url)
         content = a.content
         respond = content.decode('gb2312', 'ignore')
-        print('\r返回消息:', re.findall("<script language=JavaScript>alert\('(.*?)'\);", respond)[0], end='\r')
+        html = etree.HTML(respond)
+
 
 
     '''选课'''
@@ -246,10 +246,12 @@ if __name__ == '__main__':
                 print(f'''
 ************************操作指令菜单**********************
 *{SemesterNum}                             * 
-*                                                      *
-*                      1:查看预选课程                    *
+*                         抢课区                        *
+*                      1:抢指定编号课                    *
 *                      2:抢取预选课程                    *
-*                      3:抢指定编号课                    *
+*                                                      *
+*                         查询区                        *
+*                      3:查看预选课程                    *
 *                      4:查看课程信息                    *
 *                      5:搜索关键词课程信息               *
 *                      0:立即退出程序                    *
@@ -263,11 +265,11 @@ if __name__ == '__main__':
         if num == 0:
             Judge = False
             print("感谢使用，程序已退出:)")
-        elif num == 1:
+        elif num == 3:
             iCS.GetPreClasses()
         elif num == 2:
-            pass
-        elif num == 3:
+            iCS.ConfirePre()
+        elif num == 1:
             ClassID = input("请输入课程ID:")
             iCS.ConfireClass(ClassID)
         elif num == 4:
