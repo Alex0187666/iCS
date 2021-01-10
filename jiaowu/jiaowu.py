@@ -45,16 +45,19 @@ class Sicau():
             username = input("请输入学号:")
             password = getpass.getpass("请输入密码:")
             self.Login(username=username,password=password)
-        f = csv.reader(open('教务处开课信息(含课程ID）.csv', encoding='utf-8'))
-        data = list(f)
-        self.url = os.path.dirname(os.path.abspath(__file__))
-        os.chdir(self.url)
-        # print(self.url)
-        self.info = data
-        self.bh_id,self.name_id = {},{}
-        for i in data[1:]:
-            self.bh_id[i[1]] = i[0]
-            self.name_id[i[1]] = str(i[3]) + '-' + str(i[4])
+        try:
+            f = csv.reader(open('教务处开课信息(含课程ID）.csv', encoding='utf-8'))
+            data = list(f)
+            self.url = os.path.dirname(os.path.abspath(__file__))
+            os.chdir(self.url)
+            # print(self.url)
+            self.info = data
+            self.bh_id,self.name_id = {},{}
+            for i in data[1:]:
+                self.bh_id[i[1]] = i[0]
+                self.name_id[i[1]] = str(i[3]) + '-' + str(i[4])
+        except:
+            print('请将本程序与"教务处开课信息(含课程ID）.csv"文件放于同一文件下')
 
 
     '''登陆'''
