@@ -272,7 +272,7 @@ if __name__ == '__main__':
             iCS.ConfireClass(ClassID)
         elif num == 4:
             ClassID = input("请输入课程ID:")
-            iCS.FindUpBiaohao(ClassID)
+            iCS.FindUpBiaohao([ClassID])
         elif num == 5:
             ClassName = input("请输入课程名称关键词:")
             iCS.FindByKeywords(ClassName)
