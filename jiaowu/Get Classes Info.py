@@ -15,15 +15,6 @@ from lxml import etree
 from selenium import webdriver
 
 
-def Login(username='你的学号',password='密码'):
-    driver = webdriver.Chrome()
-    driver.get('http://jiaowu.sicau.edu.cn/web/web/web/index.asp')
-    driver.find_element_by_id('txtUser').send_keys(username)
-    driver.find_element_by_id('Userpwd').send_keys(password)
-    driver.find_element_by_xpath('//input[@value="S"]').click()
-    driver.find_element_by_name('submit').click()
-
-
 
 class ClassesInfo():
     def __init__(self):
@@ -55,8 +46,8 @@ class ClassesInfo():
         option.add_argument('--headless')
         driver = webdriver.Chrome(options=option)
         driver.get('http://jiaowu.sicau.edu.cn/web/web/web/index.asp')
-        driver.find_element_by_id('txtUser').send_keys('201900550')
-        driver.find_element_by_id('Userpwd').send_keys('275358')
+        driver.find_element_by_id('txtUser').send_keys('你的学号')
+        driver.find_element_by_id('Userpwd').send_keys('密码')
         driver.find_element_by_xpath('//input[@value="S"]').click()
         driver.find_element_by_name('submit').click()
         driver.get(url='http://jiaowu.sicau.edu.cn/jiaoshi/bangong/main/xqzt.asp?xueqi=2020-2021-2')
