@@ -272,27 +272,27 @@ class Sicau():
 
 if __name__ == '__main__':
     Info = ''' 
-                iii              CCCS           SSSSS                           
-                iii          CCCCCCCCCCC     SSSSSSSSSSS                        
-                iii         CCCCC    CCC    SSSSS    SSS                        
-                           CCCC             SSS                                 
-           iiiiiiii        CCC              SSS                                 
-            iiiiiii        CCC              SSSS                                
-                iii        CCC               SSSSSSSS                           
-                iii        CCC                 SSSSSSSSS                        
-                iii        CCC                     SSSSSS                       
-                iii        CCC                        SSS                       
-                iii        CCCC                       SSSS                      
-                iii        CCCC                       SSS                       
-                iii         CCCCC    CCC    SSS     SSSSS                       
-           iiiiiiiiiiiii      CCCCCCCCCC    SSSSSSSSSSSS                        
-                                 CCCC          SSSSSS      
-                                       
-                            预祝您考试顺利！   
-            (本工具仅作为辅助作用，后果自担，使用前请详细查看教程）  
-              GitHub地址:https://github.com/Upsetin/iCS 
-                               
-'''
+                        iii              CCCS           SSSSS                           
+                        iii          CCCCCCCCCCC     SSSSSSSSSSS                        
+                        iii         CCCCC    CCC    SSSSS    SSS                        
+                                   CCCC             SSS                                 
+                   iiiiiiii        CCC              SSS                                 
+                    iiiiiii        CCC              SSSS                                
+                        iii        CCC               SSSSSSSS                           
+                        iii        CCC                 SSSSSSSSS                        
+                        iii        CCC                     SSSSSS                       
+                        iii        CCC                        SSS                       
+                        iii        CCCC                       SSSS                      
+                        iii        CCCC                       SSS                       
+                        iii         CCCCC    CCC    SSS     SSSSS                       
+                   iiiiiiiiiiiii      CCCCCCCCCC    SSSSSSSSSSSS                        
+                                         CCCC          SSSSSS      
+
+                                    预祝您考试顺利！   
+                    (本工具仅作为辅助作用         使用前请详细查看教程）  
+                      GitHub地址:https://github.com/Upsetin/iCS 
+
+        '''
     print(Info)
     SemesterNum = '-'
     isLogin = False
