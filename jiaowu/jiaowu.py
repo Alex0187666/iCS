@@ -158,13 +158,23 @@ class Sicau():
 
     '''获取预选课程'''
     def GetPreClasses(self):
-        print('该功能暂未开放!')
-        return None
         url = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan/kaike_yuxuan.asp?title_id1=1'
         a = self.Requests.get(url)
         content = a.content
         respond = content.decode('gb2312', 'ignore')
         html = etree.HTML(respond)
+        info = html.xpath('//div[@align="center"]/a/text()')
+        if info:
+            info = info[1:]
+            num = 0
+            print('%s\t%s' % ('序号', '课程名称'))
+            for i in info:
+                num += 1
+                print('%s\t%s'%(num,i[:-6]))
+        else:
+            print('返回信息: 您暂时没有预选2020-2021-2学期课程!')
+
+
 
 
 
@@ -210,8 +220,38 @@ class Sicau():
 
     '''抢预选课'''
     def ConfirePre(self):
-        print('该功能暂未开放!')
-        pass
+        def Confire(addr):
+            baseUrl = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan'
+            Url = baseUrl + addr
+            a = self.Requests.get(Url)
+            respond = a.content.decode('gb2312', 'ignore')
+            print('\r                           ', end='\r')
+            print('\r返回消息:', re.findall("<script language=JavaScript>alert\('(.*?)'\);", respond)[0], end='\r')
+        url = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan/kaike_yuxuan.asp?title_id1=1'
+        a = self.Requests.get(url)
+        content = a.content
+        respond = content.decode('gb2312', 'ignore')
+        html = etree.HTML(respond)
+        info = html.xpath('//div[@align="center"]/a/text()')
+        if info:
+            urls = html.xpath('//div[@align="center"]/a/@href')[1:]
+            info = info[1:]
+            num = 0
+            print('%s\t%s' % ('序号', '课程名称'))
+            for i in info:
+                num += 1
+                print('%s\t%s' % (num, i))
+            for i,j in zip(info,urls):
+                print('\r正在尝试选取:',i,end='\r')
+                baseUrl = 'http://jiaowu.sicau.edu.cn/xuesheng/gongxuan/gongxuan/'
+                Url = baseUrl + j
+                a = self.Requests.get(Url)
+                respond = a.content.decode('gb2312', 'ignore')
+                print('\r                           ', end='\r')
+                print('\r返回消息:', re.findall("<script language=JavaScript>alert\('(.*?)'\);", respond)[0], end='\r')
+
+        else:
+            print('返回信息: 您暂时没有预选2020-2021-2学期课程!')
 
     '''获取本地的课程信息'''
     def FindByKeywords(self,ClassName):
@@ -296,7 +336,7 @@ if __name__ == '__main__':
             ClassID = input("请输入课程ID:")
             iCS.FindUpBiaohao([ClassID])
         elif num == 5:
-            ClassName = input("请输入课程名称关键词:")
+            ClassName = input("请输入课程名称关键词(搜索慕课请输入MOOC):")
             iCS.FindByKeywords(ClassName)
         else:
             print('⚠️输入指令有误,请核对后重试!')
