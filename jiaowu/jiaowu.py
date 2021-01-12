@@ -165,7 +165,7 @@ class Sicau():
         html = etree.HTML(respond)
         info = html.xpath('//div[@align="center"]/a/text()')
         if info:
-            info = info[1:]
+            # info = info[1:]
             num = 0
             print('%s\t%s' % ('序号', '课程名称'))
             for i in info:
