@@ -335,7 +335,6 @@ def GetToken(uid='6018e5d37fc77f3d90194078'):
 token = ''
 Login()
 
-# PK10()
 EndNum = int(input("暂只适配英雄篇,请输入的刷题次数 (55次稳上1000分): "))
 num = 0
 while num < EndNum:
