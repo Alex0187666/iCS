@@ -33,7 +33,7 @@ def ViewQR(url=''):
 
 
 def ReadFile():
-    with open("题库.csv", "r") as f:
+    with open("题库.csv", "r",encoding='utf-8') as f:
         reader = csv.reader(f)
         db = []
         for row in list(reader):

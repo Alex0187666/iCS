@@ -188,6 +188,7 @@ class Sicau():
             a = self.Requests.get(url)
             respond = a.content.decode('gb2312', 'ignore')
             print('\r                           ',end='\r')
+            # print(respond)
             print('\r返回消息:', re.findall("<script language=JavaScript>alert\('(.*?)'\);", respond)[0], end='\r')
         else:
             print('\r输入课程编号有误，请核对后重试:)', end='\r')
