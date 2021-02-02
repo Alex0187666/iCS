@@ -4,7 +4,7 @@ Function:
 Author:
     XWhite
 GitHub项目地址:
-    https://github.com/Upsetin/ChinaUniOnline
+    https://github.com/Upsetin/iCS/tree/main/中国大学生在线
 更新日期:
     2021-01-10
 '''
